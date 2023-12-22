@@ -19,30 +19,6 @@ This quiz application allows users to create quizzes, participate in quizzes, an
     - [Submit Exam](#submit-exam)
   - [Reports](#reports)
     - [Get Report](#get-report)
-   
-## Hosted API
-
-You can interact with the live API hosted on [https://gurucool-bw7c.onrender.com/](https://gurucool-bw7c.onrender.com/). Below are examples of the available endpoints:
-
-- User Authentication: [https://gurucool-bw7c.onrender.com/auth](https://gurucool-bw7c.onrender.com/auth)
-  - Register User: `POST /auth`
-  - Login User: `POST /auth/login`
-
-- Quiz Management: [https://gurucool-bw7c.onrender.com/quizzes](https://gurucool-bw7c.onrender.com/quizzes)
-  - Create Quiz: `POST /quizzes`
-  - Get Quiz: `GET /quizzes/:quizId`
-  - Update Quiz: `PUT /quizzes/:quizId`
-  - Delete Quiz: `DELETE /quizzes/:quizId`
-  - Publish/Unpublish Quiz: `PATCH /quizzes/publish`
-
-- Exam: [https://gurucool-bw7c.onrender.com/exam](https://gurucool-bw7c.onrender.com/exam)
-  - Start Exam: `GET /exam/:quizId`
-  - Submit Exam: `POST /exam`
-
-- Reports: [https://gurucool-bw7c.onrender.com/reports](https://gurucool-bw7c.onrender.com/reports)
-  - Get Report: `GET /reports/:reportId`
-
-Feel free to interact with the hosted API using the provided links.
 
 
 ## Endpoints (Continued)
@@ -199,4 +175,26 @@ Retrieve a report.
 Note: :reportId is optional.
 
 
+## Hosted API
 
+You can interact with the live API hosted on [https://gurucool-bw7c.onrender.com/](https://gurucool-bw7c.onrender.com/). Below are examples of the available endpoints:
+
+- User Authentication: [https://gurucool-bw7c.onrender.com/auth](https://gurucool-bw7c.onrender.com/auth)
+  - Register User: `POST /auth`
+  - Login User: `POST /auth/login`
+
+- Quiz Management: [https://gurucool-bw7c.onrender.com/quizzes](https://gurucool-bw7c.onrender.com/quiz)
+  - Create Quiz: `POST /quiz`
+  - Get Quiz: `GET /quiz/:quizId`
+  - Update Quiz: `PUT /quiz/:quizId`
+  - Delete Quiz: `DELETE /quiz/:quizId`
+  - Publish/Unpublish Quiz: `PATCH /quiz/publish`
+
+- Exam: [https://gurucool-bw7c.onrender.com/exam](https://gurucool-bw7c.onrender.com/exam)
+  - Start Exam: `GET /exam/:quizId`
+  - Submit Exam: `POST /exam`
+
+- Reports: [https://gurucool-bw7c.onrender.com/reports](https://gurucool-bw7c.onrender.com/reports)
+  - Get Report: `GET /report/:reportId`
+
+Feel free to interact with the hosted API using the provided links.
